@@ -31,10 +31,12 @@ public class lista1exercicio5 {
 				double media=0
 				
 				System.out.println("digite a nota da sua avaliacao; ");
-				nota1=leia.next;
-				nota2=leia.next;
-				nota3=leia.next;
-				
+				nota1=leia.nextDouble;
+				nota2=leia.nextDouble;
+				nota3=leia.nextDouble;
+				 media = ((nota1*2) + (nota2*3)+ (nota3*5))/3
+						 
+						 System.out.println("sua média é: ", media);	 
 
 	}
 

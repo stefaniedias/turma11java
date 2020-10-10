@@ -2,7 +2,7 @@ package javalista3;
 
 import java.util.Scanner;
 
-public class javafaca {
+public class exercicio3 {
 
 	public static void main(String[] args) {
 		

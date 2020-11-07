@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "06d8aa23-848b-40e7-934f-67aadd7ff5f9",
+		"name": "blogpessoal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/postagens",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n  \"titulo\": \"aula de api rest\",\r\n     \"texto\": \"estamos nos dndo bem\"\r\n}\r\n ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/postagens"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/tema",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\t\"name\": \"Get Tema\",\r\n\t\t\t\"request\": {\r\n\t\t\t\t\"method\": \"GET\",\r\n\t\t\t\t\"header\": [],\r\n\t\t\t\t\"url\": {\r\n\t\t\t\t\t\"raw\": \"http://localhost:8080/tema\",\r\n\t\t\t\t\t\"protocol\": \"http\",\r\n\t\t\t\t\t\"host\": [\r\n\t\t\t\t\t\t\"localhost\"\r\n\t\t\t\t\t],\r\n\t\t\t\t\t\"port\": \"8080\",\r\n\t\t\t\t\t\"path\": [\r\n\t\t\t\t\t\t\"tema\"\r\n\t\t\t\t\t]\r\n\t\t\t\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/tema"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/tema/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\t\"name\": \"Get ID postagem\",\r\n\t\t\t\"request\": {\r\n\t\t\t\t\"method\": \"GET\",\r\n\t\t\t\t\"header\": [],\r\n\t\t\t\t\"url\": {\r\n\t\t\t\t\t\"raw\": \"http://localhost:8080/postagens/1\",\r\n\t\t\t\t\t\"protocol\": \"http\",\r\n\t\t\t\t\t\"host\": [\r\n\t\t\t\t\t\t\"localhost\"\r\n\t\t\t\t\t],\r\n\t\t\t\t\t\"port\": \"8080\",\r\n\t\t\t\t\t\"path\": [\r\n\t\t\t\t\t\t\"postagens\",\r\n\t\t\t\t\t\t\"1\"\r\n\t\t\t\t\t]\r\n\t\t\t\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/tema/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/tema/2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\t\"name\": \"Get ID tema\",\r\n\t\t\t\"request\": {\r\n\t\t\t\t\"method\": \"GET\",\r\n\t\t\t\t\"header\": [],\r\n\t\t\t\t\"url\": {\r\n\t\t\t\t\t\"raw\": \"http://localhost:8080/tema/2\",\r\n\t\t\t\t\t\"protocol\": \"http\",\r\n\t\t\t\t\t\"host\": [\r\n\t\t\t\t\t\t\"localhost\"\r\n\t\t\t\t\t],\r\n\t\t\t\t\t\"port\": \"8080\",\r\n\t\t\t\t\t\"path\": [\r\n\t\t\t\t\t\t\"tema\",\r\n\t\t\t\t\t\t\"2\"\r\n\t\t\t\t\t]\r\n\t\t\t\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/tema/2"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/postagens",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\t\"name\": \"Inserir Dados postagem\",\r\n\t\t\t\"request\": {\r\n\t\t\t\t\"method\": \"POST\",\r\n\t\t\t\t\"header\": [],\r\n\t\t\t\t\"body\": {\r\n\t\t\t\t\t\"mode\": \"raw\",\r\n\t\t\t\t\t\"raw\": \"{\\r\\n        \\r\\n        \\\"titulo\\\": \\\"Novamente\\\",\\r\\n        \\\"texto\\\": \\\"o rapaz pulou de novo gente\\\",\\r\\n        \\\"tema\\\" : {\\r\\n            \\\"id\\\" : 3\\r\\n        }\\r\\n}\\r\\n        \",\r\n\t\t\t\t\t\"options\": {\r\n\t\t\t\t\t\t\"raw\": {\r\n\t\t\t\t\t\t\t\"language\": \"json\"\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t\t",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/postagem"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/postagem",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\t\"name\": \"Alterar dados postagem\",\r\n\t\t\t\"request\": {\r\n\t\t\t\t\"method\": \"PUT\",\r\n\t\t\t\t\"header\": [],\r\n\t\t\t\t\"body\": {\r\n\t\t\t\t\t\"mode\": \"raw\",\r\n\t\t\t\t\t\"raw\": \"{\\r\\n        \\\"id\\\": 5,\\r\\n        \\\"titulo\\\": \\\"Inedito\\\",\\r\\n        \\\"texto\\\": \\\"homem pula de muro em chamas\\\",        \\r\\n        \\\"tema\\\": {\\r\\n            \\\"id\\\" : 3\\r\\n        }\\r\\n    }\\r\\n        \",\r\n\t\t\t\t\t\"options\": {\r\n\t\t\t\t\t\t\"raw\": {\r\n\t\t\t\t\t\t\t\"language\": \"json\"\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t}\r\n\t\t\t\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/postagem"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/tema",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\t\"name\": \"Get Tema\",\r\n\t\t\t\"request\": {\r\n\t\t\t\t\"method\": \"GET\",\r\n\t\t\t\t\"header\": [],\r\n\t\t\t\t\"url\": {\r\n\t\t\t\t\t\"raw\": \"http://localhost:8080/tema\",\r\n\t\t\t\t\t\"protocol\": \"http\",\r\n\t\t\t\t\t\"host\": [\r\n\t\t\t\t\t\t\"localhost\"\r\n\t\t\t\t\t],\r\n\t\t\t\t\t\"port\": \"8080\",\r\n\t\t\t\t\t\"path\": [\r\n\t\t\t\t\t\t\"tema\"\r\n\t\t\t\t\t]\r\n\t\t\t\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/tema"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/postagen/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/postagen/2"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

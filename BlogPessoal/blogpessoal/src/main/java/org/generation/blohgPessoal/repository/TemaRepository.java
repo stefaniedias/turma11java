@@ -2,17 +2,17 @@ package org.generation.blohgPessoal.repository;
 
 
 import java.util.List;
+import java.util.Optional;
 
-import org.generation.blogpessoal.model.Tema;
+import org.generation.blohgPessoal.model.Tema;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface TemaRepository {
 	
 	public interface TemaRepository extends JpaRepository<Tema, Long> {
-		public List<Tema> findAllByDescricaoContainingIgnoreCase( String descricao);
-}
+		public List<Tema> findAllBydescricaoContainingIgnoreCase(String descricao);
 
-	public Object findById(Long id);
+
+	public Optional<Tema> findById(Long id);
 
 	public void deleteById(Long id);
 

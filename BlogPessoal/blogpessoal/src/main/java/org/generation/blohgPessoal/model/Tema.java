@@ -48,7 +48,7 @@ public class Tema {
 		this.descricao = descricao;
 	}
 
-	public List<Postagem> getPostagem() {
+	public List<Postagem> getpostagem() {
 		return postagem;
 	}
 

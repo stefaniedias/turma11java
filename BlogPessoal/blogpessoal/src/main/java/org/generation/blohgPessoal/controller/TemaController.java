@@ -5,7 +5,9 @@ package org.generation.blohgPessoal.controller;
 
 
 import java.util.List;
+import java.util.Optional;
 
+import org.generation.blohgPessoal.model.Tema;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -37,13 +39,13 @@ public class TemaController {
 	@GetMapping("/{id}")
 	public ResponseEntity<org.generation.blohgPessoal.model.Tema> getById(@PathVariable Long id){
 		
-		return ((Object) repository.findById(id)).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
+		return ((Optional<Tema>) repository.findById(id)).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
 	
 	@GetMapping ("/nome/{nome}")
 	public ResponseEntity<List<org.generation.blohgPessoal.model.Tema>> getByName(@PathVariable String nome){
 		
-		return ResponseEntity.ok(repository.findAllByDescricaoContainingIgnoreCase(nome));
+		return ResponseEntity.ok(repository.findAllBydescricaoContainingIgnoreCase(nome));
 	}
 	
 	@PostMapping
